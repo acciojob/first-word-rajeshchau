@@ -1,8 +1,7 @@
 function firstWord(s) {
-  s = s.trimStart(); // Remove leading spaces
-  if (s === "") return ""; // Return empty string if input is empty
-  const index = s.indexOf(" ");
-  return index === -1 ? s : s.substring(0, index);
+    s = s.trimStart().trimEnd(); // Fix: reassign after trimming
+    let newarray = s.split(" ");
+    return newarray[0]; // Fix: return the first word
 }
 // Do not change the code below
 
