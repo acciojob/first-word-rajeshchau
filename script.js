@@ -1,4 +1,8 @@
 function firstWord(s) {
+	s.trim();
+    let newarray = s.split(" ");
+    newarray[0];
+
   // your code here
 }
 
